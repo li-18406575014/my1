@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<!-- 设置全局参数 -->
+	<settings>
+		<!-- 默认就是开启的，开启mybatis二级缓存 -->
+		<setting name="cacheEnabled" value="true" />
+	</settings>
+
+	<!-- 给实体类定义别名 -->
+	<typeAliases>
+		<!-- 常用：批量实体别名定义 name:指定包名，mybatis自动扫描包中的类，自动定义实体别名，别名就是类名（首字母大写或小写都可以）,映射文件中只写别名(类名)就行不用写全路径名了 -->
+		<package name="com.hyxy.entity" />
+	</typeAliases>
+</configuration>

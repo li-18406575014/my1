@@ -1,0 +1,53 @@
+@charset "utf-8";
+.clearfix { *zoom:1;}
+.clearfix:after { clear: both; }
+[class*="span"] {float:left;min-height:1px;}
+.row-fluid [class*="span"] {position:relative;display: block; width: 100%; min-height: 46px; float: left; height:100%;}
+.row-fluid-1 [class*="span"] { display: block; float: left; min-height: 46px; width: 100%; }
+.row-fluid [class*="span"]:last-child { margin-left: 0; }
+.row-fluid .controls-row [class*="span"]+[class*="span"] {
+margin-left:2.127659574468085%;}
+.row-fluid .span19, .row-fluid .span18, .row-fluid .span17, .row-fluid .span16, .row-fluid .span15, .row-fluid .span14, .row-fluid .span13, .row-fluid .span12 { float: left; _display: inline; _overflow: hidden; }
+.row-fluid .span19 { width: 40%; *width:39.8%;_width: 39.8%; }
+.row-fluid .span18 { width: 60%; *width:59.8%;_width: 59.8%; }
+.row-fluid .span16 { width: 75%; *width:74.8%;_width: 74.8%; }
+.row-fluid .span17 { width: 25%; *width:24.8%;_width: 24.8%; }
+.row-fluid .span14 { width: 50%; *width:49.8%;_width: 49.8%; }
+.row-fluid .span13 { width: 25%; *width:24.8%;_width: 24.8%; }
+.row-fluid .span15 { width: 25%; *width:24.8%;_width: 24.8%; }
+.row-fluid .span12 { width: 100%; *width:99.8%;_width: 99.8%; }
+.row-fluid .span9 { width: 74.46808510638297%; float: left; }
+.row-fluid .span8 { width: 66.667%; float: left; *width:66.47%;_width: 66.47%; }
+.row-fluid .span7 { width: 57.44680851063829%; float: left; }
+.row-fluid .span6 { width: 50%; float: left; *width:49.8%;_width: 49.8%; }
+.row-fluid .span5 { width: 40.42553191489362%; float: left; }
+.row-fluid .span4,.row-fluid .span100,.row-fluid .span101 { width: 33.333%; float: left; *width:33.13%;_width: 33.13%; }
+.row-fluid .span2 { width: 16.667%; float: left; *width:16.54%;_width: 16.54%; }
+.row-fluid .span1 { width: 6.382978723404255%; *width:6%;float: left; }
+.row-fluid .span31{width:20%;}
+.row-fluid .span34{width:80%;}
+.row-fluid .span41{width:25%;}
+.row-fluid div.no_marginR { margin-right: 0px; float: right; }
+.edit .demo .row-fluid-1:before { cursor: move; font-size: 12px; font-weight: bold; left: -1px; line-height: 2; padding: 3px 7px; position: absolute; top: -1px; }
+.row-fluid-1 { margin: 0 auto 0px auto; position: relative; min-height: 30px; }
+/*.row-fluid-1 .column:hover { background: #e0edff; }*/
+/*将布局放在1100的布局里面的样式*/
+.row-fluid .row-fluid { width: 100%; margin: 0; box-sizing: border-box; position: relative; *width:100%;}
+.edit .demo .lyrow .lyrow .remove_por { width: 100%; *width:100%;}
+.lyrow .lyrow { margin-bottom: 0; }
+/*将布局放在100%的布局里面的样式*/
+.row-fluid-1 .row-fluid { width: 1100px; margin: 0 auto; position: relative; *width:100%;}
+.lyrow .row-fluid-1 .remove_por { width: 100%!important; }
+
+.row-fluid .column,.row-fluid-1 .column,.row-fluid-2 .column{height:100%;min-height: ;}
+
+/* 自适应版式 */
+.row-fluid-2 .span41{width:25%;}
+.row-fluid-2 .span31{width:33.3%;}
+.row-fluid-2 .span11{width:50%;}
+
+
+.column.float_div_class,.float_div_class{width:1100px!important;margin:0 auto;position:relative;height:0!important;border:none;border-top:1px solid transparent;background:none;}
+.lyrow:hover .column.float_div_class{border:none;border-top:1px solid transparent;}
+.webFooterbkcolumn{float:left;}
+

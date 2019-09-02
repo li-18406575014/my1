@@ -1,0 +1,422 @@
+/*供应商信息*/
+.doc-content .form-horizontal{
+    font-size: 14px;
+    padding: 0 2.5%;
+}
+.doc-content .form-horizontal .btn{
+    width: 60px;
+    height: 35px;
+    border-radius: 3px;
+    background: #F0F0F0;
+    line-height: 35px;
+    padding:0 8px;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.doc-content .form-horizontal .btn .icon-chaxun{
+    margin-right: 5px;
+    margin-left: 3px;
+}
+.doc-content .form-horizontal hr{
+    width:95%;
+    margin: auto;
+}
+.form-horizontal .radio {
+    width: 180px;
+}
+.span95{
+    width: 95%;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+}
+.table-head-bordered{
+    margin-top: 20px;
+}
+.table-head-bordered thead th {
+    background: #D7D7D7;
+    border:1px solid #E8E8E8;
+    text-align: center;
+    font-size: 14px;
+}
+.table-bordered td {
+    text-align: center;
+    font-size: 14px;
+}
+.table-bordered tr td:nth-of-type(1) {
+    padding-left: 25px;
+}
+.table-bordered tr td a{
+    color: black;
+    margin-right: 20px;
+}
+.table-bordered tr td:nth-last-of-type(1) a{
+    color:#1576D3;
+}
+.table-bordered tr td .icon-duiconverted{
+    color: #1576D3;
+    font-size: 20px;
+}
+.table-bordered tr td .icon-cuoconverted{
+    color: #E96061;
+    font-size: 20px;
+}
+.btn2{
+    width: 60px;
+    height: 35px;
+    margin: auto;
+    margin-top: -55px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 3px;
+    padding: 0 8px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #D7D7D7;
+}
+.doc-content .button{
+    padding: 4px 30px;
+    color: #ffffff;
+    background-color: #555555;
+    border-color: #555555;
+}
+/*商品信息查询*/
+.sel1{
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+/*已支付订单*/
+.table2 tr td>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+/*已发货订单*/
+.right3{
+    width:30%;
+    float: left;
+    margin: auto;
+    padding:20px 20px;
+    font-size: 13px;
+    line-height: 30px;
+    background: #D7D7D7;
+    color: #0066CC;
+    margin-left:2.5%;
+}
+.right3>div:nth-of-type(3){
+    margin-left:15px;
+}
+/*全部订单*/
+.bui-grid, .bui-simple-grid {
+    margin-top: -20px;
+}
+.image-pbar .bui-pb-page, .bui-grid .bui-pagingbar .bui-pb-page {
+    text-align: center;
+}
+
+/*角色模块管理*/
+.doc-content .form-horizontal .btn4{
+    width: 60px;
+    height: 35px;
+    border-radius: 3px;
+    background: #D7D7D7;
+    line-height: 35px;
+    padding:0 18px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 70px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+/*用户新增*/
+.ub{
+    margin-left: -60px;
+    margin-top: 20px;
+}
+.ur{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+/*商品销售报表*/
+.sell .control-label {
+    width: 70px;
+}
+.sell input[type="text"] {
+    width: 101px;
+}
+.doc-content .content .row .sell .control-group select {
+    width: 146px;
+}
+.doc-content .content .row .sell .btn-s {
+    width: 60px;
+    height: 35px;
+    border-radius: 3px;
+    background: #F0F0F0;
+    line-height: 35px;
+    padding: 0 8px 0 18px;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.sell2 .table-bordered tr td:nth-of-type(1) {
+    padding-left: 10px;
+}
+
+/*home*/
+.span24{
+    width: 100%;
+}
+.doc-h{
+    background: #F3F3F5;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.line{
+    width: 95%;
+    margin: auto;
+    position: relative;
+    background: #F3F3F5;
+}
+.line .fourth{
+    width:23.5%;
+    height:125px;
+    overflow: hidden;
+    background: #E7EBED;
+    margin: auto;
+    margin-right: 2%;
+    position: relative;
+    float: left;
+    color: #666A6C;
+}
+.line .fourth:nth-last-of-type(1){
+    margin-right: 0;
+}
+.line .fourth .head{
+    width: 100%;
+    height: 40px;
+    background: white;
+    margin-top: 2px;
+}
+.line .fourth .head>span:nth-of-type(1){
+   line-height: 40px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.line .fourth .head>span:nth-of-type(2){
+    float: right;
+    padding: 0 7px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.line .fourth .mid{
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background: white;
+    font-size: 22px;
+    margin-top: 1px;
+}
+.line .fourth .bot{
+    width: 100%;
+    background: white;
+    height: 40px;
+}
+.line .fourth .bot>span:nth-of-type(1){
+    width: 80%;
+    line-height: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background: white;
+}
+.line .fourth .bot span:nth-of-type(2){
+    width:20%;
+    line-height: 20px;
+    float: right;
+    margin-right: 20px;
+    font-weight: bolder;
+}
+.line .fourth .icon-turntop::before{
+    width: 30px;
+    height: 20px;
+    line-height: 10px;
+    top: 0;
+}
+.col-l1{
+   background:#1C85C7 ;
+}
+.col-l2{
+    background:#21C7CA ;
+}
+.col-l3{
+    background:#1AB395 ;
+}
+.col-l4{
+    background:#ED5464 ;
+}
+.col-c1{
+    color:#1C85C7 ;
+}
+.col-c2{
+    color:#21C7CA ;
+}
+.col-c3{
+    color:#1AB395 ;
+}
+.col-c4{
+    color:#ED5464 ;
+}
+.cont{
+    width:95%;
+    height:300px;
+    overflow: hidden;
+    background: #E7EBED;
+    margin: auto;
+    color: #666A6C;
+    margin-top: 150px;
+}
+.cont .head2{
+    width: 100%;
+    height: 40px;
+    background: white;
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+.cont .head2>span:nth-of-type(1){
+    line-height: 40px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #666A6C;
+}
+.cont .head2>span:nth-of-type(2){
+    float: right;
+    padding: 0 10px;
+    border :1px solid #E8E8E8;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #666A6C;
+}
+.cont .bot{
+    width: 100%;
+    height:282px;
+    background: white;
+    padding-top: 40px;
+    position: relative;
+}
+.cont .bot .left{
+    width: 70%;
+    height: auto;
+    position: relative;
+}
+.cont .bot .left>div{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.cont .bot .left>div>span:nth-of-type(1){
+    margin-left:6%;
+    float: left;
+
+}
+.cont .bot .left>div>span:nth-of-type(2){
+    margin-right: 6%;
+    float: right;
+}
+.cont .bot .left hr{
+    width: 80%;
+    color: #E7EBED;
+    position: absolute;
+    top:-10px;
+    left: 10%;
+}
+.cont .bot .vet{
+    position: absolute;
+    margin: auto;
+    top:50px;
+    right:37.5%;
+    height: 160px;
+    width: 1px;
+    background: #E7EBED;
+}
+.cont .bot .left>div>.biao:nth-of-type(1){
+    position: absolute;
+    margin: auto;
+    left:90px;
+    top:10px;
+}
+.cont .bot .left>div>.biao:nth-of-type(2){
+    position: absolute;
+    margin: auto;
+    left:90px;
+    top:30px;
+}
+.cont .bot .left>div>.biao>div{
+    width:10px;
+    height: 10px;
+    border: 1px solid black;
+    float: left;
+    margin-top:5px ;
+    margin-right: 5px;
+}
+.cont .bot .left>div>.biao>span{
+    float: left;
+    line-height: 25px;
+}
+.col-b1{
+    background: #1AB395;
+}
+.col-b2{
+    background: #464E89;
+}
+.cont .bot .right{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    top:0;
+    right:0;
+}
+.cont .bot .right>div:nth-of-type(1){
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.cont .bot .right>div:nth-of-type(2){
+    font-size: 12px;
+    margin-top:10px;
+}
+.cont .bot .right>div:nth-of-type(3){
+    width: 90%;
+    height: 5px;
+    border-radius: 3px;
+    margin-top:10px;
+    background: #F3F3F5;
+}
+.cont .bot .right>div:nth-of-type(3)>div{
+    width: 50%;
+    height: 5px;
+    border-radius: 3px;
+    background: #1AB395;
+}
+
+

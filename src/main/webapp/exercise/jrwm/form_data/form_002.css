@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.flex-5{max-width:1200px;margin:0 auto;}
+.c-submitbtn{text-align: center;}
+.c-optbtn{height:30px;padding:0 25px;background: #0cf;color:#fff;line-height: 30px;border:none;border-radius:4px;cursor:pointer;font-size:14px;}
+.c-optbtn:hover{background:#00b7ec;}
+
+
+.c-table-item{margin-bottom:0px;border-bottom:none;}
+.c-table-item .c-layout{border-bottom: none;}
+.form-field-items{padding-bottom:10px;}
+.inTransverseLine .c-table-item{border-top:none;}
+.show-area .section-body .field-item{height:100%;}
+
+.form-code{margin-bottom:20px;}
+.form-code input{margin-right: 5px;}
+.form-code img,.form-code input{display: inline-block;vertical-align: middle;}
+

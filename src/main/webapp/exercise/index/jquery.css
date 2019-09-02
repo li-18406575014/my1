@@ -1,0 +1,322 @@
+/* jquery.icolor.js begin*/
+.icolor{position:absolute;}
+.icolor_flat,.icolor_ft{position:relative;}
+.icolor_ok img{border:none;}
+#icolor3 .icolor_ok{position:absolute;left:154px;top:50%;margin-top:-8px;}
+.colorsElement{float:left;border:2px solid #d3edfa;width:172px;height:auto;background:#fff;margin:6px 0 0 0;clear:both;padding:3px 3px 3px 6px;}
+.choseOtherColors{float:left;padding:1px 8px 0 15px;width:162px;height:36px;background:#d3edfa;clear:both;}
+.choseOtherColors a{float:right;width:40px;height:20px;line-height:20px;text-align:center;margin:8px;font-size:12px;font-weight:bold;border-top:1px solid #79c0e4;border-left:1px solid #79c0e4;border-right:2px solid #79c0e4;border-bottom:2px solid #79c0e4;cursor:pointer;}
+.choseOtherColors a:hover{color:#FFF;border-top:2px solid #0555a0;border-left:2px solid #0555a0;background:#79c0e4;}
+.color_element{border:1px solid #999;cursor:pointer;width:15px;height:15px;float:left;margin:2px;}
+.color_mouseenter{border:1px solid red;cursor:pointer;width:15px;height:15px;float:left;margin:2px;}
+.color_slected_hot{border:1px solid blue;background:url(../img/colorpicker/syronex-colorpicker.gif) no-repeat;cursor:pointer;width:15px;height:15px;float:left;margin:2px;}
+.checkwht{bakcground-position:-13px 0px;cursor:default}
+.checkblk{bakcground-position:-26px 0px;cursor:default}
+.colorSelector{float:left;position:relative;width:34px;height:34px;background:url(../img/colorpicker/select.png);}
+.colorSelector div{position:absolute;top:2px;left:2px;width:30px;height:30px;background:url(../img/colorpicker/select.png) center;}
+/* jquery.icolor.js end*/
+/* colorpicker.js begin*/
+.colorpicker{width:356px;height:176px;overflow:hidden;position:absolute;background:url(../img/colorpicker/colorpicker_background.png);font-family:Arial,Helvetica,sans-serif;display:none;margin:0 5px 0 0;}
+.colorpicker_color{width:150px;height:150px;left:14px;top:13px;position:absolute;background:#f00;overflow:hidden;cursor:crosshair;}
+.colorpicker_color div{position:relative;top:0;left:0;width:150px;height:150px;background:url(../img/colorpicker/colorpicker_overlay.png);}
+.colorpicker_color div div{position:absolute;top:0;left:0;width:11px;height:11px;overflow:hidden;background:url(../img/colorpicker/colorpicker_select.gif);margin:-5px 0 0 -5px;}
+.colorpicker_hue{position:absolute;top:13px;left:171px;width:35px;height:150px;cursor:n-resize;}
+.colorpicker_hue div{position:absolute;width:35px;height:9px;overflow:hidden;background:url(../img/colorpicker/colorpicker_indic.gif) left top;margin:-4px 0 0 0;left:0px;}
+.colorpicker_new_color{position:absolute;width:60px;height:30px;left:213px;top:13px;background:#f00;}
+.colorpicker_current_color{position:absolute;width:60px;height:30px;left:283px;top:13px;background:#f00;}
+.colorpicker input{background-color:transparent;border:1px solid transparent;position:absolute;font-size:10px;font-family:Arial,Helvetica,sans-serif;color:#000000;top:4px;right:11px;text-align:right;margin:0;padding:0;height:11px;border:none;}
+.colorpicker_hex{position:absolute;width:72px;height:22px;background:url(../img/colorpicker/colorpicker_hex.png) top;left:212px;top:142px;}
+.colorpicker_hex input{right:6px;}
+.colorpicker_field{height:22px;width:62px;background-position:top;position:absolute;}
+.colorpicker_field span{position:absolute;width:12px;height:22px;overflow:hidden;top:0;right:0;cursor:n-resize;}
+.colorpicker_rgb_r{background-image:url(../img/colorpicker/colorpicker_rgb_r.png);top:52px;left:212px;}
+.colorpicker_rgb_g{background-image:url(../img/colorpicker/colorpicker_rgb_g.png);top:82px;left:212px;}
+.colorpicker_rgb_b{background-image:url(../img/colorpicker/colorpicker_rgb_b.png);top:112px;left:212px;}
+.colorpicker_hsb_h{background-image:url(../img/colorpicker/colorpicker_hsb_h.png);top:52px;left:282px;}
+.colorpicker_hsb_s{background-image:url(../img/colorpicker/colorpicker_hsb_s.png);top:82px;left:282px;}
+.colorpicker_hsb_b{background-image:url(../img/colorpicker/colorpicker_hsb_b.png);top:112px;left:282px;}
+.colorpicker_submit{position:absolute;width:22px;height:22px;background:url(../img/colorpicker/colorpicker_submit.png) top;left:322px;top:142px;overflow:hidden;}
+.colorpicker_focus{background-position:center;}
+.colorpicker_hex.colorpicker_focus{background-position:bottom;}
+.colorpicker_submit.colorpicker_focus{background-position:bottom;}
+.colorpicker_slider{background-position:bottom;}
+/*颜色选择器2 开始*/
+.colorPicker{display:inline-block;width:25px;height:18px;border:1px solid #999;cursor:pointer;vertical-align: -2px;
+	-webkit-border-radius: 4px;-moz-border-radius: 4px;-ms-border-radius: 4px;-o-border-radius: 4px;border-radius: 4px;}
+.colorTipspan{display:inline-block;height:22px;line-height:22px;vertical-align: 4px;}
+.colorpanel{width:231px;height:179px;position:absolute;z-index:10000}
+.colorFrameBorder{display:block;position:absolute;z-index:-1;top:0;left:0;width:100%;height:100%;filter:alpha(opacity=0);-moz-opacity:0}
+.colorTableBody{border-bottom:solid 1px #0cf;border-collapse:collapse}
+.colorBorderCollapse{border-collapse:collapse}
+.DisColor{width:59px;height:17px;border:solid 1px #fff}
+.DisColorBorder{top:5px;width:60px;height:18px;left:3px;padding:0 1px 1px 0}
+.HexColor{position:absolute;top:5px;top:4px\9;*top:4px;width:60px;left:69px;font-family:Arial;padding:0}
+.color_transparent{position:absolute;left:134px;top:5px;width:18px;height:18px;cursor:default;outline:0;text-decoration:none;cursor:pointer;background:url(../img/colorpicker/color_transparent.gif)}
+a.color_transparent:hover{background:url(../img/colorpicker/color_transparent.png) -18px 0}
+.color_sure{position:absolute;width:20px;height:20px;font-size:12px;right:26px;top:4px;outline:0;text-decoration:none;
+    background:url(../img/colorpicker/color_sure.png)}
+a.color_sure:hover{background:url(../img/colorpicker/color_sure.png) -20px 0}
+.color_close{position:absolute;width:20px;height:20px;right:3px;top:4px;outline:0;text-decoration:none;background:url(../img/colorpicker/color_close.png)}
+a.color_close:hover{background:url(../img/colorpicker/color_close.png) -20px 0}
+.color_borderTableColor{border:solid 1px #000}
+.color_outsideBorder{border:solid 1px #0cf;}
+.color_insideBorder{border:solid 1px #c4defd}
+.color_white{border:solid 1px #fff}
+.color_confirm{width:20px;height:20px;display:block;position:absolute;right:25px;top:4px;}
+
+/*自定义颜色选择器的宽高 2015.07.09 ljp   想恢复默认样式 ，把下面的样式代码删掉即可*/
+.popupWindowIframe .colorpanel{left:130px!important;}
+.colorpanel{width:330px;height:230px;}
+.color_outsideBorder{width:330px;height:232px;background: #fff;}
+.colorTableBody{width:330px!important;}
+.color_insideBorder{border:none;}
+.color_white{border:none;}
+.color_borderTableColor{width:310px;height:186px;margin:10px auto;}
+.DisColor{width:134px;margin-left: 6px;}
+.HexColor{left:154px;}
+.color_outsideBorder{border-color:#0cf;position: absolute;left:-46px;}
+.special_colorbox .color_outsideBorder{left: -146px;}
+/*jrf.dialog.css*/
+.visitorCounter_cp_9{background-position:-135px 0 !important}
+.formDialog{display:block;position:absolute;top:150px;left:50%;overflow:hidden;z-index:9032;}
+.formDialog .formArc{display:block;width:420px;margin:15px 0 0 0;overflow:hidden}
+.formDialog .formTC{background:url(../img/styleDesign/dialog_ct.png) repeat-x;height:64px;color:#333;text-align:left;cursor:move;}
+.formDialog .formTC h3{background:url(../img/styleDesign/ico_img.png) no-repeat 10px 28px;padding:8px 0 0 24px;margin:0;line-height:65px; font-family:"Microsoft Yahei"; font-size:18px;font-weight: normal;text-indent:20px;}
+.formDialog .formTL{background:url(../img/styleDesign/dialog_lt.png) no-repeat;padding-left:20px;height:64px}
+.formDialog .formTR{background:url(../img/styleDesign/dialog_rt.png) no-repeat right 0;padding:0 20px 0 0;*zoom:1;height:64px}
+.formDialog .formTCSite{
+    background:url(../img/styleDesign/bottom_img2.png) repeat-x 0 -30px;height:27px;line-height:27px;margin:0;padding:0;color:#FFF;font-weight:bold;
+    text-align:left;padding-left:10px;cursor:move;}
+.formDialog .formTLSite{background:url(../img/styleDesign/bottom_img2.png) no-repeat;padding-left:3px;height:27px}
+.formDialog .formTRSite{background:url(../img/styleDesign/bottom_img2.png) no-repeat right -60px;padding-right:3px;* zoom:1;height:27px}
+.formDialog .formXSite{position:absolute;right:1px;top:0;padding:0;width:44px;height:38px;
+    background:url(../img/styleDesign/close.png) no-repeat 50% 50%;outline:0;cursor:pointer}
+.formDialog .formBC{position:relative;background:#fff;/*padding:0 0 13px 0;*/text-align:center;overflow:hidden;font-family:"Microsoft Yahei";font-size:14px;}
+.formDialog .formBL{background:url(../img/styleDesign/bl.png) repeat-y left 0;padding:0 0 0 9px;}
+.formDialog .formBR{background:url(../img/styleDesign/br.png) repeat-y right 0;padding:0 9px 0 0;*zoom:1}
+.formBt{height:13px;width:100%; background:url(../img/styleDesign/close.gif) no-repeat;}
+.formBtl{background:url(../img/styleDesign/formBtl.png) no-repeat left bottom;height:13px; padding:0 0 0 19px;}
+.formBtm{background:url(../img/styleDesign/bt.png) repeat-x left bottom;height:13px;}
+.formBtr{background:url(../img/styleDesign/formBtr.png) no-repeat right bottom;height:13px; padding:0 12px 0 0;}
+/*.formDialog .formMSG{color:#317895}*/
+.formDialog .formBtns{width:100%;}
+.formDialog .abutton{padding:0 22px;cursor:pointer;margin:0 10px 0 0;height:30px; line-height:30px; color:#fff;font-size:13px;border:none;background: #0cf;
+	-webkit-transition:all 0.25s ease-in-out 0s;
+	-moz-transition:all 0.25s ease-in-out 0s;
+	-ms-transition:all 0.25s ease-in-out 0s;
+	-o-transition:all 0.25s ease-in-out 0s;
+	transition:all 0.25s ease-in-out 0s;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+.formDialog .abutton:hover{background: #00b7ec;color: #fff;}
+.formDialog .abutton.cancelButton{background: #eaeaea;color: #333;}
+.formDialog .abutton.cancelButton:hover{background: #ccc;}
+.formDialog .formX{position:absolute;right:31px;top:32px;padding:0;width:14px;height:14px;background:url(/res/common/img/styleDesign/dialog_closebtn.gif) no-repeat 0 0;outline:0;cursor:pointer;transition: transform 0.3s ease-in-out 0s;}
+.formDialog .formX:hover{background:url(/res/common/img/styleDesign/dialog_closebtn_over.gif) no-repeat 0 0;transform: rotate(180deg);}
+.formDialog .formH{position:absolute;top:0;right:45px;padding:0;width:43px;height:27px;background:url(../img/styleDesign/newWin.gif) no-repeat 0 -150px;_background:url(../img/styleDesign/newWin_IE6/H.gif) no-repeat 0 0;outline:0;cursor:pointer}
+.formDialog .formH:hover{background-position:0 -180px !important;_background:url(../img/styleDesign/newWin_IE6/H_hover.gif) no-repeat 0 0}
+.waitingP{display:block;background:url(../img/loading/loading_2.gif) no-repeat center center;position:absolute;top:27px;height:180px;margin:7px 1px;}
+.popupBg{position:fixed;margin:0;padding:0;top:0;left:0;right:0;bottom:0;height:100%;_position:absolute;_height:expression(body.clientHeight);* width:expression(document.documentElement.clientWidth);background:#000;filter:alpha(opacity = 70);z-index:9032;overflow:hidden;opacity:.7}
+.formDialog .formX_old{position:absolute;right:7px;top:4px;padding:0;height:19px;width:19px;background:url(../img/styleDesign/close.gif) no-repeat 0 0 !important;outline:0}
+.formDialog .formX_old:hover{background:url(../img/styleDesign/close.gif) no-repeat 0 bottom !important}
+.dropdownForm{float:right;width:auto;font-size:12px;margin:0}
+.dropdownForm .editBox{float:left;padding:0}
+.dropdownForm .editBox a{display:block;padding:0;text-decoration:none;width:auto;white-space:nowrap}
+.dropdownForm .editBox ul{min-width:60px;max-width:none;_width:60px;height:auto;list-style:none;z-index:9100;margin:0;padding:0;position:absolute;visibility:hidden;border-top:0 solid white}
+.dropdownForm .editBox ul li{float:none;display:inline;margin:0;text-align:left;height:23px;line-height:23px}
+.dropdownForm .editBox ul li a{background:#699;color:#fff;padding:0 10px;}
+.dropdownForm .editBox ul li a:hover{color:#fff;background:#8ea344}
+.sitetips{position:fixed;_position:absolute;width:100%;top:0;left:0;height:30px;line-height:30px;background:#fef5d8;border-bottom:1px solid #e4e6e8;margin:0;padding:0;font-size:18px;text-align:center;font-size:12px;color:#000;z-index:9031}
+.sitetips a{text-decoration:underline;color:#666}
+.sitetips .sitetipsIcon{display:inline-block;height:30px;padding:0 0 0 18px;line-height:30px;background-position:left !important}
+.sitetips .sitetipsTitle{height:30px;line-height:30px;outline:0;cursor:default}
+.sitetips .scrollbar{float:right;width:960px;font-size:12px}
+.sitetips .scrollbar ul.marquee{display:block;padding:0;margin:0;list-style:none;line-height:30px;position:relative;overflow:hidden;width:960px;height:30px}
+.sitetips .scrollbar ul.marquee li{cursor:pointer;line-height:30px;position:absolute;top:-999px;left:0;display:block;white-space:nowrap;font:12px Arial,Helvetica,sans-serif;height:30px;width:960px;text-align:center}
+.sitetips .tbutton{text-decoration:none}
+
+* html .ui-autocomplete{width:1px}
+.ui-menu{list-style:none;padding:2px;margin:0;display:block}
+.ui-menu .ui-menu{margin-top:-3px}
+.ui-menu .ui-menu-item{margin:0;padding:0;zoom:1;float:left;clear:left;width:100%}
+.ui-menu .ui-menu-item a{text-decoration:none;display:block;padding:.2em .4em;line-height:1.5;zoom:1}
+.ui-menu .ui-menu-item a.ui-state-hover,.ui-menu .ui-menu-item a.ui-state-active{font-weight:normal;margin:-1px}
+.ui-menu .ui-menu-item .ui-state-hover{border:1px solid #bdbdbd;background:#f5f5f5;font-weight:normal;color:#212121;cursor:pointer;}
+
+/*#absForm .ui-resizable .ui-resizable-n,*/
+/*#absForm .ui-resizable .ui-resizable-e,*/
+/*#absForm .ui-resizable .ui-resizable-s,*/
+/*#absForm .ui-resizable .ui-resizable-w{background: red;}*/
+.ui-resizable .ui-resizable-n{height:0;border-bottom:1px dashed #0cf;}
+.ui-resizable .ui-resizable-e{width:0;border-right:1px dashed #0cf;}
+.ui-resizable .ui-resizable-s{height:0;border-bottom:1px dashed #0cf;}
+.ui-resizable .ui-resizable-w{width:0;border-right:1px dashed #0cf;}
+
+
+
+.ui-resizable .ui-resizable-se,
+.ui-resizable .ui-resizable-sw,
+.ui-resizable .ui-resizable-ne,
+.ui-resizable .ui-resizable-nw{background: #fff;border:1px solid #0cf;border-radius:100%;}
+
+.lyrow .ui-resizable .ui-resizable-s{height:27px;border-bottom:none;background:url(/res/jrfcms/img/admin/default/c-movetopico.png) no-repeat center bottom;bottom:-5px;}
+.webFooterbklyrow  .ui-resizable .ui-resizable-s{background:none;height:0;}
+.lyrow .box .ui-resizable-s{border-bottom:1px dashed #0cf;}
+.lyrow .ui-state-disabled,.lyrow  .ui-widget-content .ui-state-disabled,.lyrow  .ui-widget-header .ui-state-disabled { opacity: 1; filter:Alpha(Opacity=100); background-image: none; }
+.ui-resizable .box .ui-resizable-s{background:none;height:0;}
+
+.ui-effects-transfer{border:2px dotted gray}
+.ui-resizable-n{cursor:s-resize;height:9px;top:-5px;left:0;width:100%}
+.ui-resizable-e{cursor:e-resize;height:100%;right:-5px;top:0;width:9px}
+.ui-resizable-handle{display:block;font-size:.1px;position:absolute;z-index:9999}
+.ui-resizable-s{bottom:-5px;cursor:s-resize;height:9px;left:0;width:100%}
+.ui-resizable-w{cursor:e-resize;height:100%;left:-5px;top:0;width:9px}
+.ui-icon{background-image:url(../img/jquery_ui/arrow.gif);width:9px;height:5px;}
+.ui-icon-gripsmall-diagonal-se{background-position:-84px -228px}
+.ui-resizable-se{bottom:1px;cursor:se-resize;right:-0px;bottom:-0px;width:12px;height:12px;}
+.ui-resizable-sw{bottom:1px;cursor:sw-resize;left:-0px;bottom:-0px;width:12px;height:12px;}
+.ui-resizable-helper{border:2px dotted gray}
+/*.siteBackToTop_small_box{width:41px;height:38px;display:none;cursor:pointer;background:url(/image/site/backtotop.png?v=201303181743) no-repeat;position:fixed;z-index:9030;right:18px;bottom:50px}*/
+.cloud-zoom-lens{border:4px solid #888;margin:-4px;background-color:#fff;cursor:pointer}
+.cloud-zoom-title{font-family:Arial,Helvetica,sans-serif;position:absolute !important;background-color:#000;color:#fff;padding:3px;width:100%;text-align:center;font-weight:bold;font-size:10px;top:0}
+.cloud-zoom-big{border:4px solid #ccc;overflow:hidden}
+.cloud-zoom-loading{color:white;background:#222;padding:3px;border:1px solid #000}
+.weather2{margin:0;padding:0;float:left;width:250px;line-height:27px}
+ul.weather2 li{margin:0 4px;float:left;list-style:none}
+ul.weather2 li em{font-style:normal}
+.formMiddleContent .includeWeather11{height:80px}
+.formMiddleContent .includeWeather12{height:135px}
+.formMiddleContent .includeWeather7{height:35px}
+.formMiddleContent .includeWeather5{height:33px}
+.formMiddleContent .includeWeather1{height:27px}
+.formMiddleContent .includeWeather3{height:35px}
+.weather2 .left12{width:110px;text-align:center;float:left;margin-right:5px;height:135px}
+.weather2 .right12{width:130px;text-align:left;float:left;height:135px}
+.weather2 .right12 .temperature12{width:70px;float:left}
+.weather2 .right12 .windInclude12 .wind12{width:70px;float:left}
+.weather2 .right12 .windInclude12{height:34px}
+.weather2 .right12 .temperatureInclude12{height:34px}
+.weather2 .right12 .windDirectionInclude12{line-height:23px}
+.weather2 .right12 .windDirectionInclude12 .windDirection12{width:70px;float:left}
+.weather2 .left12 .weatherCon12 div{float:left;}
+/*.formMiddleContent .weather2Loading{top:0;width:100%;height:100%;position:absolute;background:url(/image/comm/fai/loading/loading_1.gif?v=201303261613) no-repeat 50% 50%}*/
+.weather2 .cityName11{float:left;padding:20px 0 0 10px;line-height:20px;font-weight:bold;font-size:16px;margin-right:10px;}
+.weather2 .image111{float:left}
+.weather2 .weatherToday11{float:left;line-height:20px}
+.weather2 .weatherToday11 .weatherCon11{text-align:center}
+
+.shopping{height:32px;line-height:32px;display:inline-block;margin-left:30px;font-family:}
+.totalAmountCss{color:#ab0707}
+.cartInfoContent{padding-left:29px;height:30px;line-height:30px;font-size:12px;color:#5d5c5c;letter-spacing:1px;font-family:}
+.addItemTextTips{font-size:14px;color:#4f4f4f;height:25px;line-height:25px;font-weight:900;padding-left:29px;font-family:}
+.mallCartOperate{height:32px;padding-left:29px;width:100%}
+
+.choiceFileListRemain{height:17px;left:470px;position:absolute;text-align:center;top:46px;width:120px;z-index:2;}
+.showFilesContent{border:1px solid #cbcfe5;float:left;height:340px;margin:6px 0 0 6px;overflow-y:auto;width:437px;position:relative;padding:4px 0 0 0;}
+.showFilesContent img{display:block;border:1px solid #DBDBDB;padding:3px;float:left;margin:5px 0 2px 0;}
+.choiceFileList{border:1px solid #cbcfe5;height:336px;left:460px;overflow-y:auto;position:absolute;top:71px;width:140px;z-index:2;padding:8px 0 0 0;}
+.choiceFileList img{display:block;margin:0 auto 5px auto;border:1px solid #DBDBDB;padding:3px;}
+.top_menu{height:25px;margin:3px 0 0 8px;clear:both;overflow:hidden;}
+.top_menu01{height:40px;margin:3px 0 0 8px;clear:both;overflow:hidden;}
+.bodyDisable{position:absolute;width:100%;height:100%;z-index:100;top:0;left:0;background:#fff;opacity:.6;-moz-opacity:.6;filter:alpha(opacity=60);}
+.pagingStyle{width:130px;position:relative;top:2px;margin:0 auto 0 170px;text-align:center;font-family:"";clear:both;overflow:hidden;}
+.pagingStyle i,.pagingStyle a{font-style:normal;display:block;background:url(../../jrfcms/img/admin/default/pagelistbk.gif) no-repeat 0 0;width:26px;height:24px;float:left;font-weight:bold;line-height:24px;}
+.pagingStyle span{display:block;float:left;background:url(../../jrfcms/img/admin/default/pagelistbk.gif) no-repeat 0 -28px;width:43px;height:24px;line-height:24px;margin:0 8px;}
+.pagingStyle a{color:#005598;}
+.pagingStyle a:hover{color:#f00;}
+.formt_bk{ padding:11px 0 3px; background: #fff; border-top:1px solid #ddd;/*background:url("../img/jquery_ui/select_btbk.gif") repeat-x scroll 0 0 transparent;*/
+    *margin:10px 0 0;text-align:right; }
+.dialog_btndialog_btn{}
+.formt_bk .dialog_btn,.formt_bk .dialog_btn_m,.formt_bk .jrfclosebtn,.formt_bk .jrfclosebtn_m,
+.formDialog .formBL table.formBtns .jrfclosebtn,.formDialog .formBL table.formBtns .jrfclosebtn_m{color:#333;height:30px;line-height:28px;border:none;margin:0px 10px 0 0;padding:0 22px;font-size:14px;cursor:pointer; font-family:"Microsoft Yahei";
+    -webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;-o-border-radius:4px;border-radius:4px;
+    -webkit-transition:all 0.25s ease-in-out 0s; -moz-transition:all 0.25s ease-in-out 0s; -ms-transition:all 0.25s ease-in-out 0s; -o-transition:all 0.25s ease-in-out 0s; transition:all 0.25s ease-in-out 0s;}
+.formt_bk .jrfclosebtn,.formDialog .formBL table.formBtns .jrfclosebtn{background: #EAEAEA;margin-right: 22px;}
+.formDialog .formBL table.formBtns{border-top:1px solid #ddd;}
+.formDialog .formBL table.formBtns td{text-align: right;padding: 11px 0 3px 0!important;}
+.formDialog .formBL table.formBtns .jrfclosebtn{display:inline-block;}
+.formt_bk .jrfclosebtn_m,.formDialog .formBL table.formBtns .jrfclosebtn_m{background: #ccc;margin-right: 22px;/*background:url(../img/jquery_ui/botom_btnon.gif) no-repeat;*/}
+.formt_bk .dialog_btn{background: #0cf;color:#fff;}
+.formt_bk .dialog_btn[disabled="disabled"]{cursor:default;}
+.formt_bk .dialog_btn_m{background: #00b7ec;color:#fff;}
+.picture_m{margin:13px 0 0 30px;clear:both;overflow:hidden;}
+.picture_m h3{float:left;font-weight:normal;font-size:12px;color:#004a99;margin:2px 0 0 0;}
+.picture_m h3 span{display:block;margin:52px 0 0 24px;}
+.pictureDialog{float:left;}
+.mfc_main{position:relative;display:block;width:300px;*width:300px;margin:8px 0;display:block;}
+.up_flash{margin:7px 0 10px 0;clear:both;overflow:hidden;height:28px;}
+.up_flash span{display:block;float:left;margin:0 10px 0 0;}
+.watermarkEditWrap{margin:3px 0 0 0;float:left;}
+.edit_main_box{height:162px;}
+.edit_main_box p{padding:60px 0 0 30px;}
+.texta_main_box{height:162px;}
+.texta_main_box span{display:block;float:left;margin:60px 5px 0 20px;}
+.text_popupDesc{float:left;margin:20px 0 0 0;width:240px;height:105px;}
+
+
+#popup_container { font-family:'Microsoft YaHei'; font-size: 12px; }
+.c-tipwindow .alert a{color:#0cf;padding:0 3px;}
+.popup_title { font-size: 12px; font-weight: normal; text-align: left; line-height: 1.75em; color: #fff; position: relative; padding: 0 0 3px 10px; background: url(../img/jquery_ui/title.gif) top repeat-x; cursor: default; }
+.popup_title h5 { font-size: 12px; background: url(../img/styleDesign/ico_img.gif) no-repeat left 3px; padding: 0 0 0 20px; width: 255px; }
+.popup_ok, .popup_ok_m {margin: 0 10px 0 0;padding:0 15px; height: 30px;border:none;line-height:30px;text-align:center; cursor: pointer; color: #333; font-family: "Microsoft Yahei";border-radius:2px;font-size:14px;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transition: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    -o-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+}
+#popup_ok.popup_ok{background: #0cf;color:#fff;}
+#popup_ok.popup_ok_m{background: #00b7ec;color:#fff;}
+#popup_cancel.popup_ok{background:#EAEAEA;}
+#popup_cancel.popup_ok_m{background:#ccc;}
+.popup_ok,.popup_ok_m{ color: #3e3e3e;}
+.popup_ok { background: url(../../res/common/img/jquery_ui/botom_btn.gif); }
+.popup_ok_m { background: url(../../res/common/img/jquery_ui/botom_btn.gif);}
+#popup_content.confirm { background: url(../img/jquery_ui/important.gif); }
+#popup_content.prompt { background: url(../img/jquery_ui/help.gif); }
+.alert {padding:50px 10px 50px 0;max-width:60%;width:auto; font-size: 15px; text-align: left; color: #333; display: inline-block;vertical-align: middle;/* background: url(../image/tanh.gif) no-repeat 40px center;*/}
+.confirm {display:inline-block;/*background: url(../image/tanh.gif) no-repeat 85px 57px; */padding:62px 0 62px 0;  font-size: 15px; text-align: left;  color: #333;vertical-align: middle; }
+.uitip_img{position: relative;margin:4px 24px 0 0;display:inline-block;vertical-align:middle;width:55px;height:55px;background:#f80 url(../img/jquery_ui/info.png) no-repeat center center;border-radius:8px; }
+a.popup_close:hover { background: url(../img/styleDesign/dialog_closebtn_over.gif) no-repeat; }
+.popup_close { background: url(../img/styleDesign/dialog_closebtn.gif) no-repeat scroll 0 0 transparent; cursor: pointer; height: 17px; width: 28px; display: block; position: absolute; right: 0; top: 0; margin: 0 6px 0 0; }
+#popup_panel { padding:11px 0 3px; text-align: right; background: url(../../res/common/img/jquery_ui/select_btbk.gif) repeat-x; border-top: 1px solid #ddd; }
+#popup_prompt { margin: .5em 0em; }
+.formDialog_alt { display: block; position: absolute; top: 150px; left: 50%; overflow: hidden; z-index: 9032; background: #fff url(../image/alt_bk.gif) repeat-x left bottom; border: 3px solid #004a99; }
+.formTL_alt { border-bottom: 1px solid #004a99; padding: 0 0 5px 0; }
+.formTR_alt { padding: 0 0 0 12px; }
+.formTC_alt { padding: 0 8px 0 0; }
+.formDialog_alt .formArc_alt { display: block; width: 420px; margin: 15px 0 0 0; overflow: hidden }
+.formDialog_alt .formTC_alt h3 { background: url(../image/tips.gif) no-repeat 0 9px; color: #004a99; font-size: 14px; padding: 6px 0 0 24px; line-height: 26px; }
+.formDialog_alt .formBC_alt { padding:0 0 13px; overflow:auto;}
+.formDialog_alt .formBtns_alt { width: 100%; height: 30px; display: none; }
+.formDialog_alt .formBtns_alt .abutton_alt { margin: 0 10px; height: 25px; padding: 0 3px; cursor: pointer }
+.formDialog_alt .formX_alt { position: absolute; right: 12px; top: 8px; padding: 0; width: 12px; height: 12px; background: url(../image/close1.gif) no-repeat 0 0; outline: 0; cursor: pointer }
+.formDialog_alt .formX_alt:hover { background: url(../image/close_hover1.gif) no-repeat 0 0; }
+.formBtl_alt { height: 8px; }
+
+/* tip new style*/
+.c-tipwindow {padding:20px 0 0 0;background:#f5f5f5;border-radius:8px;border:1px solid #ddd;-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.5);-moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.5);-o-box-shadow: 2px 2px 3px rgba(0,0,0,0.5);-ms-box-shadow: 2px 2px 3px rgba(0,0,0,0.5);box-shadow: 2px 2px 3px rgba(0,0,0,0.5);}
+.c-tipwindow #popup_message {width:auto;max-width:100%;padding:15px 20px 26px;display:block;text-align: center;font-family:"Microsoft Yahei";}
+.c-tipwindow .uitip_img{display:block;margin:35px auto 0;}
+.c-tipwindow #popup_panel{padding:17px 0 15px;background:#fff;text-align: center;}
+.c-tipwindow #popup_panel #popup_ok,.c-tipwindow #popup_panel #popup_cancel{width:auto;padding:0 20px;}
+.c-tipwindow .formX{top:17px;right:17px;}
+/*filedownload*/
+.fileDownPw .uitip_img{background: none;width: auto;height: 30px;font-size:14px;line-height: 30px;text-align: center;}
+.fileDownPw.formDialog{width: 342px;top:50%;left:50%;margin:-113px 0 0 -171px;position: fixed;}
+/*.fileDownPw .popup_ok, .popup_ok_m{margin: 0;}*/
+.fileDownPw .c-tipcontent .alert{width:auto;max-width:100%;padding:15px 20px 26px;display:block;text-align: center;}
+.fileDownPw .popup_panel{padding:17px 0 15px;background:#fff;text-align: center;border-top: 1px solid #ddd;}
+.fileDownPw .popup_ok,.fileDownPw .popup_ok_m,.fileDownPw .popup_cancel{width:auto;padding:0 20px;}
+.fileDownPw .popup_ok{background: #0cf;color:#fff;}
+.fileDownPw .popup_ok_m{background: #00b7ec;color:#fff;}
+#jvForm.no_padding{padding: 0;}
+.popup_overlay { background: none repeat scroll 0 0 #000; bottom: 0; height: 100%; left: 0; margin: 0; opacity: 0.7;filter: alpha(opacity=70);overflow: hidden; padding: 0; position: fixed; right: 0; top: 0; z-index: 9032; }
+
+
+/* 模块帮助 */
+.c-helplink{position: absolute;top: 29px;right: 80px;display:block;background:url(/res/jrfcms/img/admin/default/helptip.png) no-repeat 0 1px;padding:0 0 0 26px;font-size:14px;color:#ff8712;}

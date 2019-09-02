@@ -1,0 +1,207 @@
+@charset "UTF-8";
+body,div,ul,li,form,input,textarea,p,blockquote,th,td{margin:0; padding:0;}
+table{border-collapse:collapse; border-spacing:0; }
+img{border:0; }
+ol,ul{list-style:none; }
+i{font-style: normal;}
+.fl{float:left;}
+.fr{float:right;}
+body{font-size: 14px;color: #333;font-family:"微软雅黑",Arial,sans-serif;}
+form,input,textarea{font-family:"微软雅黑",Arial,sans-serif;}
+/*中间控件显示*/
+.show-area{background: #fff;height:100%;overflow-y:auto;}
+.c-submitbtn .show-area{background: none;}
+.show-area .section-header{min-height: 35px;text-align:center;border-bottom: 1px solid #efefef;}
+.show-area .section-body{padding: 20px;top:35px;left:0;bottom:0;right:0;overflow-x:hidden;}
+.show-area .section-body .field-item{margin-bottom: 5px;position: relative;}
+.show-area .section-body .field-item .lc-close{position: absolute;top:-6px;right:5px;z-index: 10;color:#0cf;cursor: pointer;display: none;font-size: 22px;}
+.show-area .section-body .field-item .lc-close:before{font-size:12px;}
+
+
+.show-area .section-body .field-item.active{border: 1px dashed #0cf;background:#daf4fb;}
+.show-area .section-body .field-item:hover .lc-close{display: block;}
+.show-area .section-body .field-item .cover{position: absolute;left: 0;right: 0;top:0;bottom:0;z-index: 9;cursor: move;border:1px dashed transparent;}
+.show-area .form-group:after,.show-area .form-group-box:after{display: table;content: '';width: 100%;clear: both;}
+.show-area .form-group td{padding:10px;box-sizing:border-box;}
+.show-area  .form-control{width:100%;border: 1px solid #eaeff1;background: #fbfbfb;box-shadow: none;height:40px;font-size: 15px;padding: 5px;box-sizing: border-box;border-radius: 3px;}
+.show-area textarea.form-control{height: 60px;margin-top:9px;}
+/*上传*/
+.show-area .form-group .control-panel .upload-action{margin-top: 8px;}
+.show-area .form-group .control-panel a{color:#0cf;}
+/*日期*/
+.show-area .form-group .control-panel .input-group{display: table;position: relative;width: 100%;}
+.show-area .form-group .control-panel .input-group input{display:table-cell;}
+.show-area .form-group .control-panel .input-group span{display:table-cell;padding: 5px 15px;border: 1px solid #f3f3f3;border-left:none;background: #fbfbfb;width: 1%;vertical-align: middle;}
+.show-area .form-group-box .form-group{width: 50%;float: left;}
+.show-area .form-group-box .form-group .c-grouptext{width: 33.3%;float: left;text-align: right;}
+.show-area .form-group-box .form-group .control-panel{width: 66.7%;float: left;}
+/*下拉列表*/
+/*.show-area .form-group .control-panel .lc-select{position: relative;border:1px solid #f3f3f3;background: #fbfbfb; }*/
+
+select.form-control{height:40px;}
+
+/*明细*/
+.show-area .form-field-details-area .group-title {height: 11px;border-bottom: 1px dashed #dbdbdb;text-align: center;margin-bottom: 35px;}
+.show-area .form-field-details-area .group-title div{display: inline-block;background: #f8f8f8;min-width: 120px;padding: 0 25px;color: #aaa;height: 22px;line-height:22px; }
+.show-area .form-field-details-area .form-field-items{min-height: 60px;text-align: center;}
+.show-area .form-field-details-area .form-field-items div{padding: 20px 0;}
+.show-area .form-field-details-area .link-add-details{padding: 8px 5px;color:#0cf;}
+/*纯文本*/
+.show-area .form-group .text-center{text-align: center;}
+.show-area .form-group hr{border:none;border-top: 1px solid #eee;}
+
+.show-area .form-group .add-btn a{margin: auto;padding-top: 30px;display: inline-block;}
+.show-area .form-group .add-btn a i:before{font-size: 20px;}
+/*
+@media (min-width: 768px) {
+     .show-area .form-group .c-grouptext{width: 16.6%;text-align: right;}
+   .show-area .form-group .control-panel{width: 83.4%;}*//**//*
+}*/
+
+@media (min-width: 768px) {
+    .show-area .form-group .c-grouptext{text-align: right;}
+}
+
+.control-panel .radio,.control-panel .checkbox {display:inline-block;margin-right: 15px;padding:3px 0;height: 32px;line-height: 32px;}
+.control-panel .radio.c-vertical,.control-panel .checkbox.c-vertical {display:block;}
+/*控件图标*/
+/*@font-face {
+    font-family: FontAwesome;
+    src: url(../fonts/fontawesome-webfont.eot?v=4.7.0);
+    src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+@font-face {
+    font-family: lcfont;
+    src: url(../fonts/iconfont.eot?t=1493884221319);
+    src: url(../fonts/iconfont.eot?t=1493884221319#iefix) format('embedded-opentype'), url(../fonts/iconfont.woff?t=1493884221319) format('woff'), url(../fonts/iconfont.ttf?t=1493884221319) format('truetype'), url(../fonts/iconfont.svg?t=1493884221319#lcfont) format('svg')
+}
+.lcfont:before {font-family: 'lcfont';speak: none;display: inline-block;text-decoration: inherit;font-size:16px;text-align: center;-webkit-font-smoothing: antialiased;font-smoothing: antialiased;text-rendering: optimizeLegibility;}
+.lc-close:before{content: '\e60e';}
+.lc-input:before {content:"\e674";}
+.lc-textarea:before {content: "\e676";}
+.lc-date:before {content: "\e67d";}
+.lc-interval:before {content: "\e67e";}
+.lc-select2:before {content: "\e683";}
+.lc-number:before {content: "\e681";}
+.lc-radio:before {content: "\e675";}
+.lc-checkbox:before {content: "\e679";}
+.lc-markdown:before {content: "\e67a";}
+.lc-details:before {content: "\e67c";}
+.lc-money:before {content: "\e684";}
+.lc-label:before {content: "\e684";}
+.lc-image:before {content: "\e682";}
+.lc-hr:before {content: "\e677";}
+.lc-attachment:before {content: "\e60c";}
+.lc-add:before {content: "\e610";}
+.lc-check:before{content: "\e61d";}
+.lc-schedule-o:before{content: "\e644";}
+/
+/*  单选框 */
+input[type="radio"],input[type="checkbox"]{display: none;}
+.radio-text,.checkbox-text{display:inline-block;padding-left:20px;cursor:pointer;}
+.radio-text{background:url(../../admin/img/danxuan_f.png) no-repeat 0 center;}
+/*  单选框 选中类名  c-radioed*/
+.radio-text.c-radioed{background:url(../../admin/img/danxuan_t.png) no-repeat 0 center;}
+/*  复选框 */
+.checkbox-text{background:url(../img/f-checkbox.png) no-repeat 0 center;}
+/*  复选框 选中类名 */
+.checkbox-text.c-checked{background:url(../img/f-checked.png) no-repeat 0 center;}
+.c-prequired{display:none;color:#f00;margin-right: 3px;}
+
+html,body,table,tr,td{ margin:0px;height:100%;}
+.c-table-item{width:100%;border-collapse: collapse;min-height:60px;}
+.c-table-item .c-layout{width:50%;}
+.form-group{width:100%;border-collapse: collapse;}
+/*  .form-group .c-grouptext{border-right:1px solid #ddd;}*/
+
+
+.show-area .section-body .field-item{margin-bottom:0;}
+.show-area .section-body .ui-sortable-helper .field-item{height:auto;}
+.form-field-hr-area{margin-top:39px;}
+textarea{resize:none}
+.formtitle{font-size:20px;line-height: 75px;}
+.title-descript{color: #999;font-size: 14px;padding:0 15px 15px;text-align: left;word-break: break-word;}
+
+/* 上传图片 */
+.upload-img{overflow:hidden;}
+.img-list{width:100%;overflow:hidden;}
+.img-list li{position: relative;float:left;width:120px;margin:0 10px 0 0;}
+.img-list li .imgWrap{height:100px;overflow:hidden;border:1px solid #ddd;padding: 2px;margin-bottom: 5px;}
+.img-list li .imgWrap img{width:100%;height:100%;}
+.img-list li .title{width:100%;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;text-align: center;}
+.img-list li .operate-bg{display:none;position: absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+.img-list li:hover .operate-bg{display: block;}
+.upload-img .img-list li .operate-bg a.delet-btn{color:#fff;display: block;text-align: center;line-height: 128px; }
+.imgupload-btn .lc-add{display: block;font-size: 43px;font-weight: 400;}
+/*.imgupload-btn .webuploader-pick .lc-add{margin-top:27px;}*/
+.imgupload-btn span{display:block;}
+.img-list .imgupload-btn{color:#0cf;border: 1px solid #ddd;width: 118px;height: 104px;text-align: center;font-size:14px;border-radius: 3px;}
+.imgupload-btn .webuploader-pick{background:none;color:#0cf;}
+/* 上传附件 */
+.upload-file .fileupload-btn{border:1px solid #ddd;width: 86px;height: 32px;line-height:32px;padding: 0px 15px;color:#333;text-align: center;border-radius:4px;font-size:14px;}
+.upload-file .webuploader-pick{background:none;color:#333;padding-top:0;padding-bottom:0;}
+.file-list{margin-top:10px;}
+.file-list li{padding:5px 10px;overflow: hidden;border: 1px solid #ddd;margin-bottom: 8px;border-radius: 5px;}
+.file-list li .title{float: left;}
+.file-list li .file-delet{float: right;color:#999;font-size:20px;}
+
+/* 表格 */
+.form-text{width: 97%; margin: 0 auto;padding: 10px 0;text-align:center;}
+.form-table{width:97%;margin: 10px auto;border-collapse: collapse;border:1px solid #eee;height:auto;}
+.form-table td,.form-table th{border:1px solid #eee;padding: 10px;}
+
+
+/* 内横线 */
+.inTransverseLine .c-table-item{border-bottom:1px solid #ddd;border-top:1px solid #ddd;}
+.inTransverseLine .item-parent-div:first-child .c-table-item{border-top:none;}
+.inTransverseLine .item-parent-div:last-child .c-table-item{border-bottom:none;}
+/* 内竖线 */
+.inVerticalLine .c-grouptext{border-right:1px solid #ddd;}
+.inVerticalLine .c-layout{border-right:1px solid #ddd;}
+.inVerticalLine .c-layout:last-child{border-right:none;}
+/* 外横线 */
+.outTransverseLine .item-parent-div:first-child .c-table-item{border-top:1px solid #ddd;}
+.outTransverseLine .item-parent-div:last-child .c-table-item{border-bottom:1px solid #ddd;}
+/* 外竖线 */
+.outVerticalLine .c-table-item{border-left:1px solid #ddd;border-right:1px solid #ddd;}
+
+
+/* 提交按钮 */
+.form-submit{text-align:center;}
+.form-submit .code-input{width:120px;height:34px;}
+.form-submit img{height:34px;margin-top:-4px;margin-left:4px;}
+.form-submit .show-area{margin-bottom:15px;}
+.form-submit .layui-btn{width:120px;height:38px;margin-bottom:20px;font-size:16px;line-height:38px;}
+.form-submit .layui-btn.c-btnstyle01{background: #0cf;color:#fff;border-color:#0cf;border-radius:0;}
+.form-submit .layui-btn.c-btnstyle02{background: #0cf;color:#fff;border-color:#0cf;border-radius:6px;}
+.form-submit .layui-btn.c-btnstyle03{background: #0cf;color:#fff;border-color:#0cf;border-radius:20px;}
+.form-submit .layui-btn.c-btnstyle04{background: #fff;color:#0cf;border-color:#0cf;border-radius:0;}
+.form-submit .layui-btn.c-btnstyle05{background: #fff;color:#0cf;border-color:#0cf;border-radius:6px;}
+.form-submit .layui-btn.c-btnstyle06{background: #fff;color:#0cf;border-color:#0cf;border-radius:20px;}
+/* 登录页面 */
+.login-head{position:absolute;top:0;left:0;width:100%;height:85px;background: #fff;}
+.login-head .head-inner{width:1200px;margin:0 auto;}
+.login-head .head-detail,.login-head h1{float:left;}
+.login-head h1{margin-top:19px;margin-right: 20px;}
+.head-detail{margin-top:28px;}
+.head-text{font-size:26px;color:#5c5d5d;line-height: 33px;}
+.device-line{height:33px;border-left:1px solid #ddd;margin-right:10px;}
+.head-text,.device-line{display:inline-block;vertical-align: middle;}
+
+.login-main{width:100%;height:100%;background:#97befc url(../img/login-bg.png) no-repeat center bottom;}
+.login-infor{position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;width:462px;height:414px;background:#fff;border-radius:6px;}
+.login-p{font-size:24px;color:#333;text-align: center;padding-top: 60px;padding-bottom:50px;}
+.login-infor .layui-form{width:366px;margin:0 auto;}
+.login-infor .layui-form-item{border:1px solid #ddd;margin-bottom:23px;height:45px;}
+.login-infor .layui-form-label{width:20px;height:20px;padding:0;margin-top: 9px;margin-left: 19px;background:url(../img/login-icons.png) no-repeat;}
+.layui-tel .layui-form-label{background-position:0 -1px;}
+.layui-password .layui-form-label{background-position:2px -32px;}
+.login-infor .layui-input-block{margin-left:53px;}
+.login-infor .layui-input{border:none;height:45px;}
+.login-infor .login-btns{border:none;}
+.login-infor .login-btn{width:100%;height:47px;padding:0;background: #0cf;font-size: 18px;}
+.login-infor .login-btn:hover{background:#1eb1e2;}
+.login-infor .login-btns .layui-input-block{margin-left: 0;}
+

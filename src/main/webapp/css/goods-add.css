@@ -1,0 +1,502 @@
+.row {
+    width: 100%;
+}
+.doc-content .content .well {
+    background: white;
+    width: 100%;
+}
+.doc-content .nav-tabs{
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+}
+.nav-tabs li>a{
+    background: #D7D7D7;
+    color: black;
+}
+.nav-tabs li > a, .link-tabs li > a {
+    padding: 5px 30px;
+}
+.doc-content .content{
+    width: 95%;
+    box-sizing: border-box;
+    margin: auto;
+    border:1px solid #ddd;
+    border-top:none;
+    padding: 5px;
+    font-size: 13px;
+}
+.doc-content .content .well{
+    background: white;
+}
+.doc-content .content .well .span20 input[type='text']{
+    width: 540px;
+}
+.doc-content .content .well .span22{
+    width: 100%;
+    height: 130px;
+}
+.doc-content .content .well .span22 textarea[type='text']{
+    width: 540px;
+    height: 100px;
+}
+.doc-content .content .well .radio{
+    padding-left: 45px;
+}
+.doc-content .content .well .radio input{
+    margin-left: 15px;
+}
+.doc-content .button-primary {
+    width: 80px;
+    color: #ffffff;
+    background-color: #555555;
+    border-color: #555555;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-left: 35%;
+}
+.nav-tabs li > a:hover, .link-tabs li > a:hover {
+    border-color: #dddddd #dddddd #dddddd;
+}
+.nav-tabs li > a:hover, .link-tabs li > a:hover, .nav-tabs li > a:focus, .link-tabs li > a:focus {
+    text-decoration: none;
+    background-color: white;
+}
+/*2*/
+.doc-content .conn .dis-none{
+    display:none;
+}
+.span95{
+    width: 95%;
+    margin-left:2.5%;
+    margin-bottom: 20px;
+}
+.table-head-bordered{
+    margin-top: 20px;
+}
+.table-head-bordered thead th {
+    background: #D7D7D7;
+    border:1px solid #E8E8E8;
+    text-align: center;
+    font-size: 14px;
+}
+.table-bordered td {
+    text-align: center;
+    font-size: 14px;
+}
+.table-bordered tr td:nth-last-of-type(1) a{
+    color:#1576D3;
+}
+.table-bordered tr td a{
+    color: black;
+    margin-right: 20px;
+}
+.table-bordered tr td .icon-duiconverted{
+    color: #1576D3;
+    font-size: 20px;
+}
+.table-bordered tr td .icon-cuoconverted{
+    color: #E96061;
+    font-size: 20px;
+}
+.btn{
+    width: 60px;
+    height: 35px;
+    border-radius: 3px;
+    background: #797979;
+    line-height: 35px;
+    padding:0 18px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 150px;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.roww{
+    display: block;
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.roww .span95 .row label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-top: 30px;
+}
+.roww .span95 .row input{
+     width: 250px;
+ }
+.table-bordered td>img {
+    width:30px;
+    height: 30px;
+}
+
+
+
+
+
+ .control-group1{
+    text-decoration: none;
+    margin-left: 40px;
+}
+ .control-group s{
+    color: red;
+    text-decoration: none;
+    margin-right: 2px;
+}
+[class*="span"] {
+     margin-left: 0;
+    box-sizing: border-box;
+}
+ .control-group img{
+    width:70px;
+    height:70px;
+    padding: 5px;
+    background: #CCCCCC;
+    margin-left: 85px;
+}
+ #file{
+    width:100px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    background: #880000;
+    margin-top: 10px;
+    margin-left:150px;
+    color: white;
+}
+ input[type='file']{
+    position: absolute;
+    width:70px;
+    height:30px;
+    top: 420px;
+    left:245px;
+    opacity: 0;
+}
+ input[type="text"] {
+    width: 180px;
+}
+.doc-content .content .row .control-group select{
+    width: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+ .radio{
+    display: inline-block;
+    padding-left: 50px;
+    margin-top: 30px;
+}
+.btn{
+    width: 60px;
+    height: 35px;
+    border-radius: 3px;
+    background: #797979;
+    line-height: 35px;
+    padding:0 18px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 150px;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.well {
+    -webkit-box-shadow: none;
+}
+
+.edit-c{
+    display: none;
+}
+
+/*店铺编辑*/
+.ig{
+    width: 60px;
+    height:60px;
+    text-align: center;
+    line-height: 60px;
+    border:1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ig1{
+    margin-left: 120px;
+    margin-top: -51px;
+}
+.ig2{
+    float: left;
+    position: relative;
+    top:-102px;
+    left:200px;
+    margin-right: 20px;
+}
+.ig2>img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:-5px;
+    left:-90px;
+}
+.ig2>span{
+    width: 20px;
+    height: 20px;
+    background:rgba(0,0,0,0.5);
+    text-align: center;
+    line-height: 20px;
+    color:white;
+    position: absolute;
+    top:-5px;
+    right:-5px;
+    margin:auto;
+}
+.bb{
+    background: #D7D7D7;
+    color: black;
+    font-weight: 100;
+    width: 90px;
+}
+form .jt{
+    position: relative;
+    opacity: 0;
+    width: 60px;
+    height: 60px;
+    background: red;
+    top: 10px;
+    left: 10px;
+}
+form.ig{
+    margin-top: -20px;
+    border:0;
+}
+form .jt2{
+    top: -37px;
+    left: 121px;
+}
+.dis-none{
+    display: none;
+}
+.igg{
+    float: left;
+    position: relative;
+    top:-10px;
+    left:10px;
+    margin-right: 20px;
+}
+.igg>img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:-5px;
+    left:-90px;
+}
+
+
+
+/*销售报表*/
+.table-con{
+    width: 100%;
+    height:100%;
+    overflow: scroll;
+    position: relative;
+    background: #C5C8CD;
+}
+.table-con table{
+    background: white;
+}
+.table-sel{
+    width: 95%;
+    height:220px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.table-sel>img{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+.table-sel>.table-cont{
+    width: 100%;
+    height:100%;
+    background: #F0F0F0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 2;
+}
+.table-sel>.table-cont .table-left{
+    width: 50%;
+    height:100%;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+.table-sel>.table-cont .table-right{
+    width: 50%;
+    height:100%;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    padding-top:30px;
+}
+.table-sel>.table-cont .table-left span{
+    display: block;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 12%;
+    margin-top: 10px;
+}
+.table-sel>.table-cont .table-left .table-list{
+    width:70%;
+    margin: auto;
+    height:150px;
+    margin-left: 15%;
+    overflow: scroll;
+    box-sizing: border-box;
+    background: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    border:2px solid #CBD4DC;
+}
+.table-sel>.table-cont .table-left .table-list>li{
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    font-size: 13px;
+}
+.table-sel>.table-cont .table-left .table-list>li .radio{
+    margin-top: 0;
+}
+.table-sel>.table-cont .table-right .control-group{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+}
+.table-sel>.table-cont .table-right .control-group label{
+    width: 20%;
+    text-align: right;
+    height: 40px;
+    float: left;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.table-sel>.table-cont .table-right .control-group .controls{
+    width: 40%;
+    height: 40px;
+    float: left;
+}
+.table-sel>.table-cont .table-right button{
+    width:50px;
+    height: 25px;
+    margin-left: 9%;
+    margin-top: 15px;
+    font-size: 16px;
+    padding-left: 40px;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+.table-check{
+    width: 95%;
+    position: relative;
+    margin: auto;
+    height: 500px;
+    background: white;
+    z-index: 5;
+}
+.table-check .table-left{
+    width: 65%;
+    position: relative;
+    margin: auto;
+    height: 500px;
+    background:#E5E6E8;
+    float: left;
+    border-top: 30px solid #E5E6E8;
+    border-right: 20px solid #E5E6E8;
+    box-sizing: border-box;
+}
+
+
+.table-check .table-left>div{
+    width: 100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.table-check .table-left div canvas{
+    width: 100%;
+    height:100%;
+}
+.table-check .table-left>.dis-none2{
+    opacity: 0;
+}
+.table-check .table-right{
+    width: 35%;
+    position: relative;
+    margin: auto;
+    height: 500px;
+    background:white;
+    float: right;
+}
+.table-tit{
+    margin-top: 20px;
+}
+.table-check .table-right span{
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+}
+.table-check .table-right span:nth-of-type(1){
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.table-check .table-right .change{
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    bottom: 40px;
+    margin: auto;
+    left:0;
+}
+.table-check .table-right .change>button{
+    width: 20%;
+    margin-left: 10%;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    border:1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-top: 0;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.65);
+}
+
+
+

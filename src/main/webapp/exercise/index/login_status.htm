@@ -1,0 +1,19 @@
+
+var locationDomain = 'yundong02.mb.126net.cn';
+var staticPageStatus = '0';
+var loginStatus = 0;
+
+$(function(){
+
+	if(loginStatus==1){
+		$(".weidenglu").hide();
+        $(".memberName").html(memberName);
+        $(".yidenglu").show();
+	}else{
+        $(".yidenglu").hide();
+        $(".weidenglu").show();
+	}
+		
+	
+});
+

@@ -1,0 +1,75 @@
+/*商品分类查看*/
+.doc-content .form-horizontal{
+    font-size: 14px;
+    padding: 0 2.5%;
+}
+.doc-content .form-horizontal .btn{
+    width: 60px;
+    height: 35px;
+    border-radius: 3px;
+    background: #F0F0F0;
+    line-height: 35px;
+    padding:0 8px;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.doc-content .form-horizontal .btn .icon-chaxun{
+    margin-right: 5px;
+    margin-left: 3px;
+}
+.doc-content .form-horizontal hr{
+    width:95%;
+    margin: auto;
+}
+.form-horizontal .radio {
+    width: 180px;
+}
+.span95{
+    width: 95%;
+    margin-left:2.5%;
+}
+.table-head-bordered{
+    margin-top: 20px;
+}
+.table-head-bordered thead th {
+    background: #D7D7D7;
+    border:1px solid #E8E8E8;
+    text-align: center;
+    font-size: 14px;
+}
+.table-head-bordered thead th:nth-of-type(1) {
+    width:50%;
+}
+.table-head-bordered thead th:nth-of-type(2) {
+    width:20%;
+}
+.table-head-bordered thead th:nth-of-type(3) {
+     width:30%;
+ }
+.table-bordered td {
+    text-align: center;
+    font-size: 14px;
+}
+.table-bordered tr td:nth-of-type(1) {
+    text-align: left;
+    padding-left: 25px;
+}
+.table-bordered tr td a{
+    color: black;
+    margin-right: 20px;
+}
+.table-bordered tr td:nth-last-of-type(1) a{
+    color:#1576D3;
+}
+.table-bordered tr td .icon-duiconverted{
+    color: #1576D3;
+    font-size: 20px;
+}
+.table-bordered tr td .icon-cuoconverted{
+    color: #E96061;
+    font-size: 20px;
+}
+
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:aop="http://www.springframework.org/schema/aop"
+ xmlns:task="http://www.springframework.org/schema/task"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:mvc="http://www.springframework.org/schema/mvc"
+ xmlns:tx="http://www.springframework.org/schema/tx"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+ http://www.springframework.org/schema/tx
+ http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+ http://www.springframework.org/schema/task
+ http://www.springframework.org/schema/task/spring-task-3.1.xsd    
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/mvc    
+ http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+ http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+ 
+<!-- 启动包扫描功能，以便扫描带有@Controller、@Service、@repository、@Component等注解的类成为spring的bean -->
+<!--因为springmvc层只负责扫描@Controller，所以如果没有配置 use-default-filters属性，则默认为true，不仅仅扫描@Controller，还扫描@Service/@Repository的Bean，可能造成一些问题如事务不起作用
+配置了use-default-filters="false"时全部都不会扫描，然后用<context:include-filter>指定扫描的层，<context:exclude-filter>指定不扫描的层-->
+    <context:component-scan base-package="com.hyxy" use-default-filters="false">
+         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+ 
+   <!-- 处理请求返回json字符串 -->
+   <mvc:annotation-driven>
+      <!-- 解决返回String时乱码 -->
+      <mvc:message-converters register-defaults="true">
+         <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+            <property name="supportedMediaTypes">
+               <list>
+                 <value>text/plain;charset=UTF-8</value>
+                 <value>text/html;charset=UTF-8</value>
+               </list>
+            </property>
+         </bean>
+      </mvc:message-converters>
+   </mvc:annotation-driven>    
+    
+    <!-- jsp视图解析器 --> 
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+         <property name="prefix" value="/WEB-INF/jsp/"/>
+         <property name="suffix" value=".jsp"/>
+    </bean>
+ 
+   <!-- 配置文件上传，如果没有使用文件上传可以不用配置，当然如果不配，那么配置文件中也不必引入上传组件包 -->
+   <bean id="multipartResolver"
+      class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+      <!-- 默认编码 -->
+      <property name="defaultEncoding" value="utf-8" />
+      <!-- 文件大小最大值 单位为B(1024*100即100kB) -->
+      <property name="maxUploadSize" value="3024000" />
+      <!-- 内存中的最大值 -->
+      <property name="maxInMemorySize" value="40960" />
+   </bean>
+ 
+    <!-- springmvc 拦截器 -->
+    <!-- <mvc:interceptors>
+             <mvc:interceptor>
+                 <mvc:mapping path="/**"/>
+                 <mvc:exclude-mapping path="/LoginController/login"/>
+                 <mvc:exclude-mapping path="/FrontController/*"/>
+                 <mvc:exclude-mapping path="/LoginController/logining"/>
+                 <bean  class="com.hyxy.controller.LanJieQi" />
+             </mvc:interceptor>
+    </mvc:interceptors> -->
+ 
+</beans>

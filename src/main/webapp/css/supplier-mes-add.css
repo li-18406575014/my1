@@ -1,0 +1,56 @@
+/* 供应商信息新增*/
+.doc-content2{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 650px;
+    height:490px;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(121, 121, 121, 1);
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+}
+.doc-content2 .well{
+    background:white;
+    padding-left: 10px;
+    padding-top: 40px;
+}
+.doc-content2 .tit2{
+    width: 95%;
+    margin-left: auto;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+.doc-content2 hr{
+    width: 95%;
+    margin: auto;
+}
+.doc-content2 .button-primary {
+    color: #ffffff;
+    background-color: #555555;
+    border-color: #555555;
+    margin-right: 50px;
+    margin-left: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.doc-content2 .button{
+    padding: 4px 30px;
+    color: #ffffff;
+    background-color: #555555;
+    border-color: #555555;
+}
+
+.doc-content2 .form-horizontal .radio{
+    width: 235px;
+}
+
+
+

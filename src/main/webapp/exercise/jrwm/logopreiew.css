@@ -1,0 +1,3 @@
+#logoPictureContainer img,#logoPictureContainer img:hover{border:0;cursor:pointer;}
+.mainnav,.titleText,.formMiddle .formMiddleContent{cursor:default;}
+#picBox:hover .F_sh{display: none;}

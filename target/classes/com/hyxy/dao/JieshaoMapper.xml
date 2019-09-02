@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hyxy.dao.JieshaoMapper" >
+  <resultMap id="BaseResultMap" type="com.hyxy.entity.Jieshao" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="jieshao" property="jieshao" jdbcType="VARCHAR" />
+    <result column="url" property="url" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from jieshao
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hyxy.entity.Jieshao" >
+    insert into jieshao (id, name, jieshao, 
+      url)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{jieshao,jdbcType=VARCHAR}, 
+      #{url,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.hyxy.entity.Jieshao" >
+    update jieshao
+    set name = #{name,jdbcType=VARCHAR},
+      jieshao = #{jieshao,jdbcType=VARCHAR},
+      url = #{url,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, name, jieshao, url
+    from jieshao
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, name, jieshao, url
+    from jieshao
+  </select>
+  <!-- 新增 -->
+  <insert id="addIncreased" parameterType="com.hyxy.entity.Jieshao" >
+    insert into jieshao (name, jieshao, url)
+    values (#{name,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, 
+      #{path,jdbcType=VARCHAR})
+  </insert>
+</mapper>

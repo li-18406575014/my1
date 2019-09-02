@@ -1,0 +1,169 @@
+.box{
+    width:530px;
+    height:500px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(121, 121, 121, 1);
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 50px 0 20px 80px;
+    font-size: 14px;
+}
+.box .control-group{
+    text-decoration: none;
+    margin-left: 50px;
+}
+.box .control-group1{
+    text-decoration: none;
+    margin-left: 60px;
+}
+.box .control-group s{
+    color: red;
+    text-decoration: none;
+    margin-right: 2px;
+}
+.box .control-group img{
+    width:70px;
+    height:70px;
+    padding: 5px;
+    background: #CCCCCC;
+    margin-left: 40px;
+}
+.box #file{
+    width:100px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    background: #880000;
+    margin-top: 10px;
+    margin-left:130px;
+    color: white;
+}
+.box input[type='file']{
+    position: absolute;
+    width:70px;
+    height:30px;
+    top: 150px;
+    left:245px;
+    opacity: 0;
+}
+.box .row .control-group label{
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    margin-top: 25px;
+}
+.box input[type="text"] {
+    width: 180px;
+}
+.box select{
+    width: 100px;
+}
+.box .radio{
+    display: inline-block;
+   padding-left: 50px;
+    margin-top: 30px;
+}
+.btn{
+    width: 60px;
+    height: 35px;
+    border-radius: 3px;
+    background: #797979;
+    line-height: 35px;
+    padding:0 18px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 150px;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+/*商品分类编辑*/
+.doc-content2{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 650px;
+    height: 424px;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(121, 121, 121, 1);
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+}
+.doc-content2 .well{
+    background:white;
+    padding-left: 90px;
+    padding-top: 40px;
+}
+.doc-content2 .tit2{
+    width: 95%;
+    margin-left: auto;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+.doc-content2 hr{
+    width: 95%;
+    margin: auto;
+}
+.doc-content2 .button-primary {
+    margin-right: 50px;
+}
+.doc-content2 .button{
+    padding: 4px 30px;
+    color: #ffffff;
+    background-color: #555555;
+    border-color: #555555;
+}
+.doc-content2 .offset1{
+    margin-top: 30px;
+    margin-left:80px;
+}
+.doc-content2  input[type="text"] {
+    width: 280px;
+    height: 20px;
+}
+.doc-content2 .form-horizontal .control-label {
+    width: 130px;
+}
+.doc-content2 .form-horizontal .radio{
+    width: 235px;
+}
+.sel1{
+    padding-left: 50px;
+}
+.sel3{
+    padding-left: 40px;
+}
+.sel2{
+    padding-left: 70px;
+}
+.doc-content2 .well .row .deliver{
+    width: 180px;
+}
+.tips{
+    text-align: center;
+    margin-left: 100px;
+}
+.dis-none{
+    display: none;
+}
+

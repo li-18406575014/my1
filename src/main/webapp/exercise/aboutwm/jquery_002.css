@@ -1,0 +1,30 @@
+#popup_container { font-family: Arial, sans-serif; font-size: 12px; }
+.popup_title { font-size: 12px; font-weight: normal; text-align: left; line-height: 1.75em; color: #fff; position: relative; padding: 0 0 3px 10px; background: url(../img/jquery_ui/title.gif) top repeat-x; cursor: default; }
+.popup_title h5 { font-size: 12px; background: url(../img/styleDesign/ico_img.gif) no-repeat left 3px; padding: 0 0 0 20px; width: 255px; }
+.popup_ok, .popup_ok_m { margin: 0 5px; width: 75px; height: 23px; border: 0; cursor: pointer; color: #fff; font-family: "Microsoft Yahei" }
+.popup_ok { background: url(../../res/common/img/jquery_ui/botom_btn.gif); color: #3e3e3e; }
+.popup_ok_m { background: url(../../res/common/img/jquery_ui/botom_btn.gif); color: #3e3e3e; }
+#popup_content.confirm { background: url(../img/jquery_ui/important.gif); }
+#popup_content.prompt { background: url(../img/jquery_ui/help.gif); }
+.alert {/* background: url(../image/tanh.gif) no-repeat 40px center;*/ padding: 44px 10px 44px 92px;  font-size: 15px; text-align: left; color: #333; display: inline-block;vertical-align: middle;}
+.confirm {/* background: url(../image/tanh.gif) no-repeat 85px 57px;line-height: 96px;height: 88px;*/ padding: 30px 10px 30px 138px; font-size: 15px; text-align: left;  color: #333;}
+a.popup_close:hover { background: url(../img/styleDesign/dialog_closebtn_over.gif) no-repeat; }
+.popup_close { background: url(../img/styleDesign/dialog_closebtn.gif) no-repeat scroll 0 0 transparent; cursor: pointer; height: 17px; width: 28px; display: block; position: absolute; right: 0; top: 0; margin: 0 6px 0 0; }
+#popup_panel { padding: 6px 20px 6px 0; text-align: right; background: url(../../res/common/img/jquery_ui/select_btbk.gif) repeat-x; border-top: 1px solid #ccc; }
+#popup_prompt { margin: .5em 0em; }
+.formDialog_alt { display: block; position: absolute; top: 150px; left: 50%; overflow: hidden; z-index: 9032; background: #fff url(../image/alt_bk.gif) repeat-x left bottom; border: 3px solid #004a99; }
+.formTL_alt { border-bottom: 1px solid #004a99; padding: 0 0 5px 0; }
+.formTR_alt { padding: 0 0 0 12px; }
+.formTC_alt { padding: 0 8px 0 0; }
+.formDialog_alt .formArc_alt { display: block; width: 420px; margin: 15px 0 0 0; overflow: hidden }
+.formDialog_alt .formTC_alt h3 { background: url(../image/tips.gif) no-repeat 0 9px; color: #004a99; font-size: 14px; padding: 6px 0 0 24px; line-height: 26px; }
+.formDialog_alt .formBC_alt { padding:0 0 13px; overflow:auto;}
+.formDialog_alt .formBtns_alt { width: 100%; height: 30px; display: none; }
+.formDialog_alt .formBtns_alt .abutton_alt { margin: 0 10px; height: 25px; padding: 0 3px; cursor: pointer }
+.formDialog_alt .formX_alt { position: absolute; right: 12px; top: 8px; padding: 0; width: 12px; height: 12px; background: url(../image/close1.gif) no-repeat 0 0; outline: 0; cursor: pointer }
+.formDialog_alt .formX_alt:hover { background: url(../image/close_hover1.gif) no-repeat 0 0; }
+.formBtl_alt { height: 8px; }
+/*复制提示*/
+.copy_tip{line-height: 28px;}
+.copy_tip p{font-size:16px;color:#888;font-weight: normal;}
+.copy_tip span{color:#f00;font-size:15px;font-weight: normal;}

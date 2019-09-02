@@ -1,0 +1,65 @@
+.doc-content .form-horizontal{
+    font-size: 14px;
+    padding:30px 2.5% 20px 2.5%;
+    background: white;
+}
+.doc-content .form-horizontal .span18{
+    width: 45%;
+}
+.doc-content .form-horizontal input[type="text"]{
+    width: 300px;
+    height: 20px;
+}
+.doc-content .form-horizontal .control-label {
+    width: 150px;
+}
+.doc-content .form-horizontal .radio{
+    width: 255px;
+    margin-bottom: 40px;
+}
+.doc-content .form-horizontal .radio>span {
+    width: 150px;
+}
+.doc-content .button-primary {
+    margin-right: 50px;
+    margin-left: 2.5%;
+}
+.doc-content .button{
+    padding: 4px 30px;
+    color: #ffffff;
+    background-color: #555555;
+    border-color: #555555;
+}
+.doc-content .right2{
+    position:absolute;
+    width:30%;
+    margin: auto;
+    top:150px;
+    right:20%;
+    padding:10px 20px;
+    font-size: 13px;
+    line-height: 30px;
+    background: #D7D7D7;
+    color: #0066CC;
+}
+.doc-content .right>div:nth-of-type(4),.doc-content .right>div:nth-of-type(5),.doc-content .right>div:nth-of-type(6){
+    margin-left:15px;
+}
+.sel1{
+    padding-left: 50px;
+}
+.sel2{
+    padding-left: 70px;
+}
+
+/*修改密码*/
+.pass .row .span14 input{
+    width: 150px;
+}
+.pass .row .button-primary{
+    margin-left: -30px;
+    margin-top: 20px;
+}
+.pass .row .btn-reset{
+    margin-top: 20px;
+}
